@@ -44,4 +44,14 @@ public class LoaderTest {
         onView(withId(R.id.btnShowContent)).perform(click());
         onView(withId(R.id.content_container)).check(matches(isDisplayed()));
     }
+
+    /*
+        TODO:
+            1. test simple data loading,
+            2. test connection time out, load again and succeed
+            3. test connection time out, load again and fail
+
+     */
+
+
 }
