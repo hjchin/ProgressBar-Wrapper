@@ -5,11 +5,12 @@ import android.support.test.espresso.idling.CountingIdlingResource;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import world.trav.uiloader.LoaderView;
 import world.trav.uiloader.R;
 import world.trav.uiloader.databinding.ActivityMainBinding;
 import world.trav.uiloader.menu.MenuActivity;
 import world.trav.uiloader.sample.presenter.MainPresenter;
-import world.trav.uiloader.util.Loader;
+import world.trav.uiloader.Loader;
 
 import static world.trav.uiloader.menu.MenuActivity.MENU_LOAD_DATA;
 import static world.trav.uiloader.menu.MenuActivity.MENU_LOAD_DATA_ERROR1;
@@ -33,7 +34,9 @@ public class MainActivity extends AppCompatActivity implements MainView{
         super.onCreate(savedInstanceState);
         ActivityMainBinding dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        loader = new Loader(dataBinding.loadingContainer, dataBinding.contentContainer);
+        loader = new Loader();
+
+        ((LoaderView)dataBinding.container).setLoader(loader);
         presenter = new MainPresenter(this, countingIdlingResource);
 
         int menu = getIntent().getIntExtra(MenuActivity.MENU,0);

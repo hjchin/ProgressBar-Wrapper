@@ -80,13 +80,4 @@ public class LoaderTest {
     public void finish(){
         IdlingRegistry.getInstance().unregister(MainActivity.getCountingIdlingResource());
     }
-
-    /*
-        TODO:
-            2. test connection time out, load again and succeed
-            3. test connection time out, load again and fail
-
-     */
-
-
 }
