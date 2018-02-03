@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 
+import world.trav.uiloader.R;
 /**
  * Created by HJ Chin on 3/2/2018.
  */
@@ -27,7 +28,7 @@ public class LoaderView extends FrameLayout {
     public void setLoader(Loader loader){
 
         if(this.getChildCount() != 2){
-            throw new RuntimeException("Loader View can append only one direct child");
+            throw new RuntimeException("Loader View can appends only one direct child");
         }
 
         loader.setViews(this.findViewById(R.id.loading_container),this.getChildAt(1));

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UILoader.iml" filepath="$PROJECT_DIR$/UILoader.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uiloader/uiloader.iml" filepath="$PROJECT_DIR$/uiloader/uiloader.iml" />
     </modules>
   </component>
 </project>

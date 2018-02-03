@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="world.trav.uiloader">
+    package="world.trav.uiloadersample">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:fullBackupContent="@xml/backup_descriptor">
-        <activity android:name=".sample.view.MainActivity">
+        <activity android:name=".demo.view.MainActivity">
         </activity>
         <activity android:name=".menu.MenuActivity">
             <intent-filter>
