@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "world.trav.uiloader"
+        applicationId "world.trav.uiloadersample"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
@@ -27,6 +27,7 @@ android {
 }
 
 dependencies {
+    compile project (":uiloader")
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
     implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
