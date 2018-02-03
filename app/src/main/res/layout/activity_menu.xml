@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="world.trav.uiloader.menu.MenuActivity"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnShowContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Content"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="43dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnShowLoader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show loader"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="113dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnShowError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show error "
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="191dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnLoadData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="load data "
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnLoadError1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load data error 1 "
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnLoadError2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="load data error 2"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</layout>
